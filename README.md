@@ -21,6 +21,27 @@
 You can install Coulomb from [Flathub](https://flathub.org/apps/io.github.hamza_algohary.Coulomb).
 
 Alternatively, you can download the jar file directly from [releases](https://github.com/hamza-algohary/Coulomb/releases)
+### Installing with Nix
+
+```bash
+# Temporary shell
+nix-shell -p coulomb
+
+# Install permanently
+nix profile add nixpkgs#coulomb
+```
+
+#### NixOS
+
+```nix
+environment.systemPackages = with pkgs; [
+  coulomb
+];
+```
+
+```bash
+sudo nixos-rebuild switch
+```
 
 ## Features
 - Draw arbitrary circuits
