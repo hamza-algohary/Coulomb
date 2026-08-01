@@ -1,6 +1,8 @@
 # A makefile for building, testing and publishing flatpak builds.
 remote=https://github.com/hamza-algohary/io.github.hamza_algohary.Coulomb
 
+.PHONY: build debug run clean lint preview update publish delete test
+
 build:
 	flatpak-builder --user --install --disable-cache --repo=org.flathub app/build/flatpak io.github.hamza_algohary.Coulomb/io.github.hamza_algohary.Coulomb.yaml --force-clean
 debug:
