@@ -18,7 +18,7 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     kotlin("jvm") version "2.0.20"
     application
-    id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("com.gradleup.shadow") version "9.6.1"
     //id("org.graalvm.buildtools.native") version "0.10.3"
 
 }

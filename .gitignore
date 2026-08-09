@@ -4,6 +4,7 @@ org.flathub
 .gradle
 *.dll
 # Ignore Gradle build output directory
+build
 app/build
 app/bin
 app/src/main/resources/lib

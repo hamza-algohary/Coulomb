@@ -44,16 +44,26 @@ Alternatively, you can download the jar file directly from [releases](https://gi
 2. Due to the way inductors and capacitors are modeled you can't put two inductors in series, or two capacitors in parallel, that's also going to be fixed.
 
 ## Building From Source
-1. Make sure [Gtk4](https://www.gtk.org/docs/installations/),  libadwaita and [Gradle](https://gradle.org/install/) are installed on your machine.
-2. Clone this repo:
+
+### Prerequisites
+- A **JDK (Java 17 or newer)**. You only need one recent JDK installed to launch the build. Gradle automatically downloads the specific JDK version the project compiles against, so you do not have to install an older JDK manually.
+- **GTK4** and **libadwaita**. These native libraries are loaded at runtime by the Java bindings:
+  - Fedora: `sudo dnf install gtk4 libadwaita`
+  - Debian / Ubuntu: `sudo apt install libgtk-4-1 libadwaita-1-0`
+
+> [!NOTE]
+> You do not need to install Gradle separately. The included Gradle wrapper (`./gradlew`) downloads the correct Gradle version automatically.
+
+### Build and run
+1. Clone this repo:
 ```
 git clone https://github.com/hamza-Algohary/Coulomb
 ```
-3. Navigate to project's folder
+2. Navigate to the project's folder:
 ```
 cd Coulomb
 ```
-4. Build and run
+3. Build and run:
 ```
 ./gradlew run
 ```
