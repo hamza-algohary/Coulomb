@@ -1,3 +1,5 @@
+
+
 <a id="readme-top"></a>
 <div align="center">
 <a href="https://github.com/hamza-Algohary/Coulomb">
@@ -44,7 +46,7 @@ Alternatively, you can download the jar file directly from [releases](https://gi
 2. Due to the way inductors and capacitors are modeled you can't put two inductors in series, or two capacitors in parallel, that's also going to be fixed.
 
 ## Building From Source
-1. Make sure [Gtk4](https://www.gtk.org/docs/installations/),  libadwaita and [Gradle](https://gradle.org/install/) are installed on your machine.
+1. Make sure Java, [Gtk4](https://www.gtk.org/docs/installations/),  libadwaita and [Gradle](https://gradle.org/install/) are installed on your machine.
 2. Clone this repo:
 ```
 git clone https://github.com/hamza-Algohary/Coulomb
